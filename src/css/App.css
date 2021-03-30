@@ -1,0 +1,179 @@
+#root {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.App {
+  background-color: #2711ba;
+  width: auto;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.title {
+  padding-top: 300px;
+  color: white;
+}
+
+.Pbutton {
+  background-color: rgb(31, 38, 131) !important;
+  color: white !important;
+}
+
+.button {
+  background-color: rgb(31, 38, 131) !important;
+  color: white !important;
+}
+
+.profile-img img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* .profile-img {
+  padding-top: 20px;
+  padding-left: 250px;
+  padding-bottom: 30px;
+} */
+
+.profile-title {
+  padding-top: 50px;
+  color: black;
+}
+
+.main-container {
+  width: 100%;
+  /* padding-top: 5px;
+  padding-left: 350px;
+  padding-right: 350px; */
+  /* padding-bottom: 200px; */
+}
+
+/* .overlay {
+    position: absolute;
+    background-color: rgba(29, 28, 28, 0.699);
+    z-index: 2;
+} */
+
+.intro-container {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  background-image: url("../assets/Twitter-Rocket-Launch-By-Robots-Inc-GIF.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile-container {
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#float-label {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  position: relative;
+}
+
+#float-label input {
+  width: 100%;
+  height: 56px;
+  padding: 14px 16px 0 10px;
+  outline: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  font-size: 16px;
+}
+
+#float-label label {
+  font-size: 16px;
+  padding: 0 12px;
+  color: #999;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(0, 26px) scale(1);
+  transform-origin: top left;
+  transition: all o.2s ease-out;
+}
+
+#float-label:focus-within label {
+  transform: translate(0, 12px) scale(0.75);
+}
+
+.main-list-container {
+  padding-top: 50px;
+}
+
+.list-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.mylist-item {
+  background-color: #ecf7fc;
+  border-radius: 10px;
+}
+.mylist-item-w {
+  min-width: 20px;
+  max-width: 20px;
+}
+.mylist-item-h {
+  min-height: 170px;
+  max-height: 190px;
+}
+/* .mylist-container {
+  background-color: #ecf7fc;
+} */
+
+.col {
+  margin: 10px;
+  column-gap: 95px;
+}
+
+/* MEDIA DEVICES */
+
+@media screen and (max-width: 454px) {
+  .profile-container {
+    background-color: rgb(238, 229, 229) !important;
+  }
+
+  .main-container {
+    width: 100%;
+    display: flex;
+  }
+}
+
+.schedule-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.page-wrapper {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    /* min-width: 100px; */
+}
+
+.page-sidebar {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    z-index: 10000;
+}
+
+.page-body {
+    min-height: calc(100vh - 80px);
+    margin-left: 100px;
+    position: relative;
+    background-color: #ddd;
+}
